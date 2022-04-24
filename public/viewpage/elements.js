@@ -9,6 +9,7 @@ export const MENU = {
     Cart: document.getElementById('menu-cart'),
     Profile: document.getElementById('menu-profile'),
     CartItemCount: document.getElementById('menu-cart-item-count'),
+    menuwishlist : document.getElementById('menu-wishlist'),
 }
 
 //Form
@@ -24,6 +25,14 @@ export const MENU = {
     imageButton: document.getElementById('form-edit-product-image-button'),
 }*/
 //Modals
+
+export const formSearch = document.getElementById('form-search');
+export const buttonNameAsc = document.getElementById('dropdown-item-name-increasing');
+export const buttonNameDesc = document.getElementById('dropdown-item-name-decreasing');
+export const buttonPriceAsc = document.getElementById('dropdown-item-price-increasing');
+export const buttonPriceDesc = document.getElementById('dropdown-item-price-decreasing');
+export const btnpage = document.querySelector(".btn-page");
+
 export const modalInfobox = {
     modal:new bootstrap.Modal(document.getElementById('modal-infobox'), {backdrop: 'static'}),
     title:document.getElementById('modal-infobox-title'),
@@ -45,4 +54,21 @@ export const modalSignin = {
 export const modalSignup = {
     modal:new bootstrap.Modal(document.getElementById('modal-signup'),{backdrop:'static'}),
     form: document.getElementById('modal-signup-form'),
+}
+export const modalreview ={
+    modal: new bootstrap.Modal(document.getElementById('modal-review'),{backdrop:'static'}),
+    title: document.getElementById('modal-review-title'),
+    body: document.getElementById('modal-review-body')
+}
+
+export const modalallreview ={
+    modal: new bootstrap.Modal(document.getElementById('modal-all-review'),{backdrop:'static'}),
+    title: document.getElementById('modal-all-review-title'),
+    body: document.getElementById('modal-all-review-body')
+}
+
+export const modalwishlist ={
+    modal: new bootstrap.Modal(document.getElementById('modal-all-review'),{backdrop:'static'}),
+    title: document.getElementById('modal-all-review-title'),
+    body: document.getElementById('modal-all-review-body')
 }
